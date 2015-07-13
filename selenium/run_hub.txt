@@ -1,9 +1,9 @@
-En Windows:
-===========
+Windows:
+========
 
 java -jar C:\selenium-grid-node\selenium-server-standalone.jar -role hub -hubConfig C:\selenium-grid-node\hubConfig.json
 
-En Linux:
-=========
+Linux:
+======
 
 java -jar /home/claudia/Downloads/selenium-server-standalone-2.46.0.jar -role hub -hubConfig selenium/hubConfig.json

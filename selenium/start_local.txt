@@ -1,15 +1,15 @@
-En Windows:
-===========
+Windows:
+========
 
-- Ejecutando Chrome en Windows
+- With Chrome
 
 java -jar C:\selenium-grid-node\selenium-server-standalone-2.46.0.jar -role node -nodeConfig C:\selenium-grid-node\localNodeConfig.json -Dwebdriver.chrome.driver="C:\Program Files\Google\Chrome\Application\chrome.exe" -Dwebdriver.ie.driver="C:\selenium-grid-node\IEDriverServer.exe" -hub http://10.54.12.104:4444/grid/register
 
-- Solo IE
+- Just IE
 
 java -jar C:\selenium-grid-node\selenium-server-standalone-2.46.0.jar -role node -nodeConfig C:\selenium-grid-node\localNodeConfig.json -Dwebdriver.ie.driver="C:\selenium-grid-node\IEDriverServer.exe" -hub http://10.54.12.104:4444/grid/register
 
-En Linux:
-=========
+Linux:
+======
 
 java -jar /home/claudia/Downloads/selenium-server-standalone-2.46.0.jar -role node -nodeConfig /home/claudia/htdocs/galen-test-crossbrowser/selenium/localNodeConfig.json -Dwebdriver.chrome.driver="/home/claudia/Downloads/chromedriver"
