@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galen Framework Workshop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+	<!-- header -->
+    <header class="header" id="header">
+        <div class="header-content wrapper">
+            <a class="brand" rel="home">
+                <img class="brand-logo" alt="logo" src="img/logo.svg" width="26" height="27">
+                <strong class="brand-name">Galen Framework</strong>
+            </a>
+
+			<a class="main-nav-toggle" id="toggle" href="#">&#9776;</a>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#">Section 1</a></li>
+					<li><a href="#">Section 2</a></li>
+					<li><a href="#">Section 3</a></li>
+				</ul>
+			</nav>
+
+		</div>
+    </header>
+
+    <!-- splash -->
+    <article class="splash">
+    	<div class="splash-content">
+    		<h1 class="splash-title">Automated testing of look and feel for your responsive websites</h1>
+    		<a class="button large red">Download</a>
+    	</div>
+    </article>
+
+	<!-- articles -->
+    <div class="section wrapper">
+		<h2 class="section-title">Testing UI Easily</h2>
+
+		<div class="grid">
+			<article class="article">
+				<img src="img/article-image.jpg" alt="" class="article-image">
+				<h3 class="article-title">Galen Framework</h3>
+				<p class="article-excerpt">An experiment is an orderly procedure carried out with the goal of verifying, refuting, or establishing the validity of a hypothesis. </p>
+				<a href="#" class="button article-button">This is a title</a>
+			</article>
+
+			<article class="article">
+				<img src="img/article-image.jpg" alt="" class="article-image">
+				<h3 class="article-title">Galen Framework</h3>
+				<p class="article-excerpt">An experiment is an orderly procedure carried out with the goal of verifying, refuting, or establishing the validity of a hypothesis. </p>
+				<a href="#" class="button article-button">This is a title</a>
+			</article>
+
+			<article class="article">
+				<img src="img/article-image.jpg" alt="" class="article-image">
+				<h3 class="article-title">Galen Framework</h3>
+				<p class="article-excerpt">An experiment is an orderly procedure carried out with the goal of verifying, refuting, or establishing the validity of a hypothesis. </p>
+				<a href="#" class="button article-button">This is a title</a>
+			</article>		
+		</div>
+
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+		<div class="wrapper footer-content">
+			<h3 class="footer-brand"><a href="#">Galen Framework</a></h3>
+			<ul class="footer-links">
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+			</ul>
+		</div>
+    </footer>	
+	<script>
+	( function (doc) {
+		"use strict";
+
+		var toggle = doc.getElementById('toggle'),
+			header = doc.getElementById('header');
+
+		toggle.addEventListener('click', function ( event ) {
+			event.preventDefault();
+			console.log(header.className.indexOf('opened'));
+
+			if ( header.className.indexOf('opened') !== -1) {
+				header.className = 'header';
+			} else {
+				header.className = 'header opened';
+			}
+		});
+
+	})(document)
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@@ Set
+    domain  local.galencrossbrowser.com/
+    gridUrl http://localhost:4444/wd/hub
+
+@@ parameterized
+    | browser            | browserName          |
+    | firefox            | Firefox              |
+    | chrome             | Chrome               |
+    #| internet explorer  | Internet Explorer 8  |
+
+@@ parameterized
+    | device  | size     |
+    | mobile  | 400x600  |
+    | desktop | 1280x800 |
+
+
+Home in ${browserName} on ${device}
+    selenium grid ${gridUrl} --browser "${browser}" --page "http://${domain}" --size ${size}
+        check galen-tests/specs/workshop.spec --include "${device}"

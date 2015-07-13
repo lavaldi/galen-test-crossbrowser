@@ -1,0 +1,10 @@
+@@ Table devices
+    | device  | size     |
+    | mobile  | 400x600  |
+    | desktop | 1280x800 |
+
+@@ Parameterized using devices
+Workshop homepage on ${device} device
+    ${url} ${size}
+        inject galen-tests/inject.js
+        check galen-tests/specs/workshop.spec --include "${device}"
